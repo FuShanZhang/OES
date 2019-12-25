@@ -1,8 +1,9 @@
 package club.banyuan.pojo;
 
-import java.util.List;
+import lombok.Data;
 import java.util.Map;
 
+@Data
 public class Student {
 
     private Integer id;
