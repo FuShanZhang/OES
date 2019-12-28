@@ -1,7 +1,6 @@
 package club.banyuan.pojo;
 
 
-
 public class Admin {
 
     private Integer id;

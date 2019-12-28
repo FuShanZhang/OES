@@ -1,7 +1,9 @@
 package club.banyuan.pojo;
 
 
+
 import java.util.Map;
+
 
 
 public class Student {
@@ -62,4 +64,17 @@ public class Student {
     public void setScore(Map<String, Double> score) {
         this.score = score;
     }
+
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", score=" + score +
+                '}';
+    }
+
 }

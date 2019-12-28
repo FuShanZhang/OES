@@ -2,7 +2,6 @@ package club.banyuan.pojo;
 
 
 
-
 public class Subject {
     private Integer id;
     private String name;
