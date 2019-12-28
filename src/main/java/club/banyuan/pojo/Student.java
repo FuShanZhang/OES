@@ -1,6 +1,10 @@
 package club.banyuan.pojo;
 
+
+
 import java.util.Map;
+
+
 
 public class Student {
 
@@ -61,6 +65,7 @@ public class Student {
         this.score = score;
     }
 
+
     @Override
     public String toString() {
         return "Student{" +
@@ -71,4 +76,5 @@ public class Student {
                 ", score=" + score +
                 '}';
     }
+
 }
