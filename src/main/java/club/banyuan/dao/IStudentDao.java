@@ -9,4 +9,6 @@ package club.banyuan.dao;
  *
  */
 public interface IStudentDao {
+    void updatePassword();//修改密码
+
 }

@@ -1,18 +1,40 @@
 package club.banyuan.pojo;
 
-import lombok.Data;
+
 
 import java.util.List;
 
-@Data
+
 public class Question {
 
     private Integer id;
     private String name;
-    private Integer opt;
-    private String subject;
-    private String questionText;
-    private Integer Type;
+    private Integer opt;//选项答案(A,B,C,D)对应(1000,100,10,1)
+    private String subject;//题目所属的科目类型
+    private String questionText;//题目内容，包括题干和选项
+    private Integer questionType;//选项类型：0代表单选，1代表多选
+
+  
+    public Question() {
+    }
+
+    public Question(Integer id, String name, Integer opt, String subject, String questionText,  Integer questionType) {
+
+    public Question(Integer id, String name, Integer opt, String subject, String questionText, Integer type) {
+        this.id = id;
+        this.name = name;
+        this.opt = opt;
+        this.subject = subject;
+        this.questionText = questionText;
+        this.questionType = questionType;
+    }
+    public Integer getQuestionType() {
+        return questionType;
+    }
+
+    public void setQuestionType(Integer questionType) {
+        this.questionType = questionType;
+    }
 
     public Integer getId() {
         return id;
@@ -54,11 +76,33 @@ public class Question {
         this.questionText = questionText;
     }
 
+
     public Integer getType() {
         return Type;
     }
 
     public void setType(Integer type) {
         Type = type;
+    }
+      
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Question{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", opt='" + opt + '\'' +
+                ", subject='" + subject + '\'' +
+                ", questionText='" + questionText + '\'' +
+                ", type=" + type +
+                '}';
     }
 }
