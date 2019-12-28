@@ -1,22 +1,26 @@
 package club.banyuan.pojo;
 
 
-/**
- * 选项答案(A,B,C,D) 对应 (1000,100,10,1)
- * 选项类型(单,多)  对应（Integer 就是 0 和 1）看
- */
+
 
 public class Question {
 
     private Integer id;
     private String name;
+    private Integer opt;//选项答案(A,B,C,D)对应(1000,100,10,1)
+    private String subject;//题目所属的科目类型
+    private String questionText;//题目内容，包括题干和选项
+    private  Integer questionType;//选项类型：0代表单选，1代表多选
     private Integer opt;
     private String subject;
     private String questionText;
     private Integer type;
 
+
     public Question() {
     }
+
+    public Question(Integer id, String name, Integer opt, String subject, String questionText,  Integer questionType) {
 
     public Question(Integer id, String name, Integer opt, String subject, String questionText, Integer type) {
         this.id = id;
@@ -24,7 +28,14 @@ public class Question {
         this.opt = opt;
         this.subject = subject;
         this.questionText = questionText;
-        this.type = type;
+        this.questionType = questionType;
+    }
+    public Integer getQuestionType() {
+        return questionType;
+    }
+
+    public void setQuestionType(Integer questionType) {
+        this.questionType = questionType;
     }
 
     public Integer getId() {
@@ -67,6 +78,7 @@ public class Question {
         this.questionText = questionText;
     }
 
+
     public Integer getType() {
         return type;
     }
@@ -74,6 +86,7 @@ public class Question {
     public void setType(Integer type) {
         this.type = type;
     }
+
 
     @Override
     public String toString() {
