@@ -19,15 +19,15 @@ import java.util.List;
  * @author zhangyuting
  */
 public interface IAdminDao {
-    void insertUser(String username,String password);//增加学员
-    void insertQuestion();//增加考题
-    void delStudent();//删除考试学员
-    void delQuestion();//删除考题
-    void updateStudent();//修改考试学员
-    void updateQuestion();//修改考题
-    boolean usernameExit(String username);//根据传过来的username，判断在数据库中是否存在，如果存在返回true，否则返回false
-    String getPasswordByUsername(String username);
-    List<Student> selectStudentByName();
-    List<Question> selectQuestionByID();
+    void insertUser(String username,String password);//增加学员1
+    boolean usernameExit(String username);//2根据传过来的username，判断在数据库中是否存在，如果存在返回true，否则返回false
+    void getPasswordByUsername(String username);//3、根据用户名获取用户密码
+    void delStudent(String username);//删除考试学员
+    void updateStudent(String username,String password,int id);//修改考试学员
+    List<Student> selectStudentByName(String username);//通过姓名查询学生信息
+    void insertQuestion(Question question);//增加考题
+    void delQuestion(Integer id);//删除考题
+    void updateQuestion(Integer id,String opt);//修改考题
+    List<Question> selectQuestionByID(Integer id);//根据id查询试题信息
 
 }
