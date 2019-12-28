@@ -2,6 +2,8 @@ package club.banyuan.pojo;
 
 
 
+import java.util.List;
+
 
 public class Question {
 
@@ -10,13 +12,9 @@ public class Question {
     private Integer opt;//选项答案(A,B,C,D)对应(1000,100,10,1)
     private String subject;//题目所属的科目类型
     private String questionText;//题目内容，包括题干和选项
-    private  Integer questionType;//选项类型：0代表单选，1代表多选
-    private Integer opt;
-    private String subject;
-    private String questionText;
-    private Integer type;
+    private Integer questionType;//选项类型：0代表单选，1代表多选
 
-
+  
     public Question() {
     }
 
@@ -79,6 +77,14 @@ public class Question {
     }
 
 
+    public Integer getType() {
+        return Type;
+    }
+
+    public void setType(Integer type) {
+        Type = type;
+    }
+      
     public Integer getType() {
         return type;
     }
