@@ -19,7 +19,7 @@ public class CheckRegister {
 
     //正则表达式:验证密码(必须包含大小写字母和数字的组合，不能使用特殊字符，长度在 8-10 之间)
     public static boolean checkPwd(String pwd) {
-        String regExp_pwd = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{8,10}$";
+        String regExp_pwd = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{8,16}$";
         if (pwd.matches(regExp_pwd)) {
             return true;
         } else {
@@ -66,4 +66,5 @@ public class CheckRegister {
             return false;
         }
     }
+
 }
