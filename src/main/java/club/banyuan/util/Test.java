@@ -13,7 +13,6 @@ public class Test {
     @org.junit.Test
     public void Test02() throws IOException {
         ClientConn clientConn = new ClientConn(new Socket("192.168.10.59",8469));
-        clientConn.run();
     }
 
 

@@ -22,11 +22,4 @@ final class ConnManager {
         vector.add(cc);
     }
 
-    void send(ClientConn cc, String str){
-        for (ClientConn clientConn : vector) {
-            if (!cc.equals(clientConn)) {
-                clientConn.out(str);
-            }
-        }
-    }
 }

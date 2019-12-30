@@ -1,11 +1,5 @@
 package club.banyuan.dao;
-import club.banyuan.pojo.Question;
-import club.banyuan.util.HikariUtil;
-=======
-/**
- * @description 试题层，查询试题信息
- * @author zhangyuting
- * */
+
 import club.banyuan.pojo.Question;
 import club.banyuan.util.HikariUtil;
 import java.sql.Connection;
@@ -15,23 +9,26 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @description 试题层，查询试题信息
+ *  @author zhangyuting
+ * @author weng
+ */
 public class QuestionDaoImpl implements IQuestionDao {
-    PreparedStatement ps;
-    Connection con;
-    ResultSet rs;
+
 
     @Override
-    public List<Question> selectSubject(String subjectName) {
+    public List<Question> selectSubject(String subjectName)  {
         //获取连接
-        con = HikariUtil.getConnection();
+        Connection con = HikariUtil.getConnection();
         //新建集合
-        List<Question> list = new ArrayList();
+        ArrayList<Question> list = new ArrayList<Question>();
         //通过传过来的科目名称选择题目
         String sql = "select * from question where qsubject=?";
         try {
-            ps = con.prepareStatement(sql);
+            PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, subjectName);
-            rs = ps.executeQuery();
+            ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Question question = new Question();
                 question.setId(rs.getInt(1));
@@ -39,12 +36,17 @@ public class QuestionDaoImpl implements IQuestionDao {
                 question.setOpt(rs.getInt(3));
                 question.setSubject(rs.getString(4));
                 question.setQuestionText(rs.getString(5));
-                question.setType(rs.getInt(6));
+                question.setQuestionType(rs.getInt(6));
+                list.add(question);
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return list;
+    }
 
-import java.util.HashMap;
-import java.util.List;
 
-public class QuestionDaoImpl implements IQuestionDao {
+
 
     //通过科目查询该科目相关的所有试题,单表查询
     @Override
@@ -137,5 +139,6 @@ public class QuestionDaoImpl implements IQuestionDao {
             e.printStackTrace();
         }
         return false;
+
     }
 }

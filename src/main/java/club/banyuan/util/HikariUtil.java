@@ -37,7 +37,7 @@ public class HikariUtil {
             Properties pro = new Properties();
             pro.load(fileInputStream);
 
-            hikariConfig.setJdbcUrl("jdbc:mysql:///students?useSSL=false");
+            hikariConfig.setJdbcUrl("jdbc:mysql:///oes?useSSL=false");
             hikariConfig.setDriverClassName("com.mysql.jdbc.Driver");
             hikariConfig.setUsername("root");
             hikariConfig.setPassword(pro.getProperty("password"));

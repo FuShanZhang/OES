@@ -13,7 +13,7 @@ class ServiceConn {
             while(true){
                 //建立连接
                 Socket socket = serverSocket.accept();
-                JOptionPane.showMessageDialog(null,"有客户端连接了本机8469号端口");
+                //JOptionPane.showMessageDialog(null,"有客户端连接了本机8469号端口");
 
                 ClientConn cc = new ClientConn(socket);
                 cc.start();

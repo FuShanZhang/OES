@@ -8,7 +8,9 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * 对Student表进行增删改查操作*/
+ * 对Student表进行增删改查操作
+ * @author zhangyuting
+ * */
 public class AdminDaoImpl implements IAdminDao{
 
 
@@ -48,20 +50,19 @@ public class AdminDaoImpl implements IAdminDao{
     //3、根据用户名获取用户密码
     //查询用户密码，根据用户名查询用户密码
     @Override
-    public void getPasswordByUsername(String username) {
+    public String getPasswordByUsername(String username) {
        Connection con = HikariUtil.getConnection();
        String sql = "select spassword from student where susername = ?";
         try {
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.setString(1,username);
             ResultSet re = stmt.executeQuery();//查询返回一个结果集
-            while(re.next()){
-                System.out.println(re.getString(1));//此处1是代表要查询的列数，如果sql语句是查询student表中所有信息，则这边就是3.如果sql语句是查询student的两列那就是2
-            }
+            re.next();
+            return re.getString(1);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
+        return null;
     }
 
     //删除考试学员
@@ -123,18 +124,20 @@ public class AdminDaoImpl implements IAdminDao{
     @Override
     public void insertQuestion(Question question) {
         Connection con = HikariUtil.getConnection();
-        String sql = "insert into question(qid,qname,qopt,qsubject,qquestion_text,qtype) values(?,?,?,?,?,?)";
+        String sql = "insert into question(qname,qopt,qsubject,qquestion_text,qtype) values(?,?,?,?,?)";
+        PreparedStatement stmt = null;
         try {
-            PreparedStatement stmt = con.prepareStatement(sql);
-            stmt.setInt(1,question.getId());
-            stmt.setString(2,question.getName());
-            stmt.setInt(3,question.getOpt());
-            stmt.setString(4,question.getSubject());
-            stmt.setString(5,question.getQuestionText());
-            stmt.setInt(6,question.getQuestionType());
+            stmt = con.prepareStatement(sql);
+            stmt.setString(1,question.getName());
+            stmt.setInt(2,question.getOpt());
+            stmt.setString(3,question.getSubject());
+            stmt.setString(4,question.getQuestionText());
+            stmt.setInt(5,question.getQuestionType());
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            HikariUtil.release(null,stmt,con);
         }
 
     }

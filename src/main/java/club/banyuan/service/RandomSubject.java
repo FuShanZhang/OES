@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface RandomSubject {
     List<Question> randomSubjectMethod(String subjectName);
+
+    List getTenQuestions(String subjectName);
 }

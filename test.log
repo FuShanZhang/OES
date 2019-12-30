@@ -2586,3 +2586,764 @@
 2019-12-28 11:26:59 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
 2019-12-28 11:26:59 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@20d3d15a
 2019-12-28 11:26:59 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-28 15:21:53 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-28 15:21:53 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///students?useSSL=false
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-28 15:21:53 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-28 15:21:53 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-28 15:21:53 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@34033bd0
+2019-12-28 15:21:53 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-28 15:21:53 DEBUG HikariPool:417 - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+2019-12-28 15:21:53 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@5080c480
+2019-12-28 15:21:53 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@30af3bcf
+2019-12-28 15:21:53 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@34e167d9
+2019-12-28 15:21:53 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@1e118184
+2019-12-28 15:21:53 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@66274fba
+2019-12-28 15:21:53 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@27aeaa8a
+2019-12-28 15:21:53 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3ad40e7c
+2019-12-28 15:21:53 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@78c4e662
+2019-12-28 15:21:53 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@27bbc792
+2019-12-28 15:21:53 DEBUG HikariPool:417 - HikariPool-1 - After adding stats (total=10, active=1, idle=9, waiting=0)
+2019-12-28 15:23:54 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-28 15:23:54 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-28 15:23:54 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-28 15:23:54 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-28 15:23:54 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@34033bd0
+2019-12-28 15:23:54 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-28 15:25:29 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-28 15:25:29 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-28 15:25:29 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-28 15:25:29 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-28 15:25:29 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@34033bd0
+2019-12-28 15:25:29 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-28 15:25:29 DEBUG HikariPool:417 - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+2019-12-28 15:25:29 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6a7eb172
+2019-12-28 15:25:29 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@a514e3d
+2019-12-28 15:25:29 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@e1fb0d5
+2019-12-28 15:25:29 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@17993259
+2019-12-28 15:25:29 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@13816e52
+2019-12-28 15:25:29 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@5a376afc
+2019-12-28 15:25:29 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@35d9c9
+2019-12-28 15:25:29 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@21945ace
+2019-12-28 15:25:29 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6e4f536f
+2019-12-28 15:25:29 DEBUG HikariPool:417 - HikariPool-1 - After adding stats (total=10, active=1, idle=9, waiting=0)
+2019-12-28 15:26:27 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-28 15:26:27 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-28 15:26:27 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-28 15:26:27 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-28 15:26:27 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@34033bd0
+2019-12-28 15:26:27 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-28 15:28:56 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-28 15:28:56 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-28 15:28:56 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-28 15:28:56 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-28 15:28:56 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@34033bd0
+2019-12-28 15:28:56 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-28 15:28:56 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@5b9ff586
+2019-12-28 15:32:56 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-28 15:32:56 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-28 15:32:56 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-28 15:32:56 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-28 15:32:56 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@34033bd0
+2019-12-28 15:32:56 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-28 15:33:53 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-28 15:33:53 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-28 15:33:53 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-28 15:33:53 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-28 15:33:53 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@34033bd0
+2019-12-28 15:33:53 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-28 15:36:29 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-28 15:36:29 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-28 15:36:29 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-28 15:36:29 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-28 15:36:29 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@34033bd0
+2019-12-28 15:36:29 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-28 15:40:08 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-28 15:40:08 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-28 15:40:08 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-28 15:40:08 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-28 15:40:09 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@34033bd0
+2019-12-28 15:40:09 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-28 15:40:28 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-28 15:40:28 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-28 15:40:28 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-28 15:40:28 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-28 15:40:29 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@34033bd0
+2019-12-28 15:40:29 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-28 15:41:56 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-28 15:41:56 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-28 15:41:56 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-28 15:41:56 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-28 15:41:57 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@34033bd0
+2019-12-28 15:41:57 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-28 15:42:07 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-28 15:42:07 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-28 15:42:07 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-28 15:42:08 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-28 15:42:08 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@34033bd0
+2019-12-28 15:42:08 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-28 15:42:15 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-28 15:42:15 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-28 15:42:15 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-28 15:42:15 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-28 15:42:15 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@34033bd0
+2019-12-28 15:42:15 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-28 15:42:21 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-28 15:42:21 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-28 15:42:21 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-28 15:42:21 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-28 15:42:21 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@34033bd0
+2019-12-28 15:42:21 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-30 15:51:10 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-30 15:51:10 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-30 15:51:10 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-30 15:51:10 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-30 15:51:10 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4567c87c
+2019-12-30 15:51:10 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-30 15:51:10 DEBUG HikariPool:417 - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+2019-12-30 15:51:10 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@191618eb
+2019-12-30 15:51:10 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7939e7a4
+2019-12-30 15:51:10 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7d77fa3c
+2019-12-30 15:51:10 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@72998501
+2019-12-30 15:51:10 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7bb9c6f4
+2019-12-30 15:51:10 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@141e159b
+2019-12-30 15:51:10 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@86d507d
+2019-12-30 15:51:10 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@1eea6b22
+2019-12-30 15:51:10 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@741d216a
+2019-12-30 15:51:10 DEBUG HikariPool:417 - HikariPool-1 - After adding stats (total=10, active=1, idle=9, waiting=0)
+2019-12-30 15:52:07 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-30 15:52:07 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-30 15:52:07 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-30 15:52:07 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-30 15:52:07 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@10844a93
+2019-12-30 15:52:07 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-30 15:52:07 DEBUG HikariPool:417 - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+2019-12-30 15:52:07 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3df3d8b6
+2019-12-30 15:52:07 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@5ddc27f9
+2019-12-30 15:52:07 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@59921e84
+2019-12-30 15:52:07 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2f6b6c01
+2019-12-30 15:52:07 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@79b39f4c
+2019-12-30 15:52:07 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@18db94
+2019-12-30 15:52:08 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@63c92986
+2019-12-30 15:52:08 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@28f63060
+2019-12-30 15:52:08 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7c283f10
+2019-12-30 15:52:08 DEBUG HikariPool:417 - HikariPool-1 - After adding stats (total=10, active=1, idle=9, waiting=0)
+2019-12-30 15:52:37 DEBUG HikariPool:417 - HikariPool-1 - Pool stats (total=10, active=3, idle=7, waiting=0)
+2019-12-30 15:53:24 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-30 15:53:24 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-30 15:53:24 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-30 15:53:24 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-30 15:53:24 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3402f19b
+2019-12-30 15:53:24 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-30 15:53:24 DEBUG HikariPool:417 - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+2019-12-30 15:53:24 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4c9ae5f6
+2019-12-30 15:53:24 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2cb51ab9
+2019-12-30 15:53:24 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@28fb42b5
+2019-12-30 15:53:24 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@dd9dc6d
+2019-12-30 15:53:24 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@50c09241
+2019-12-30 15:53:24 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4ac8f048
+2019-12-30 15:53:24 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@76e45c66
+2019-12-30 15:53:24 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@783f6299
+2019-12-30 15:53:24 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3c53453d
+2019-12-30 15:53:24 DEBUG HikariPool:417 - HikariPool-1 - After adding stats (total=10, active=1, idle=9, waiting=0)
+2019-12-30 15:53:54 DEBUG HikariPool:417 - HikariPool-1 - Pool stats (total=10, active=2, idle=8, waiting=0)
+2019-12-30 15:54:15 DEBUG HikariConfig:900 - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2019-12-30 15:54:15 DEBUG HikariConfig:1020 - HikariPool-1 - configuration:
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - allowPoolSuspension.............false
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - autoCommit......................true
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - catalog.........................none
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - connectionInitSql...............none
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - connectionTestQuery.............none
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - connectionTimeout...............30000
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - dataSource......................none
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - dataSourceClassName.............none
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - dataSourceJNDI..................none
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - dataSourceProperties............{password=<masked>, prepStmtCacheSqlLimit=2048, cachePrepStmts=true, useServerPrepStmts=true, prepStmtCacheSize=250}
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - driverClassName................."com.mysql.jdbc.Driver"
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - healthCheckProperties...........{}
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - healthCheckRegistry.............none
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - idleTimeout.....................600000
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - initializationFailTimeout.......1
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - isolateInternalQueries..........false
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - jdbcUrl.........................jdbc:mysql:///oes?useSSL=false
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - leakDetectionThreshold..........0
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - maxLifetime.....................1800000
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - maximumPoolSize.................10
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - metricRegistry..................none
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - metricsTrackerFactory...........none
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - minimumIdle.....................10
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - password........................<masked>
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - poolName........................"HikariPool-1"
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - readOnly........................false
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - registerMbeans..................false
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - scheduledExecutor...............none
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - schema..........................none
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - threadFactory...................internal
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - transactionIsolation............default
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - username........................"root"
+2019-12-30 15:54:15 DEBUG HikariConfig:1052 - validationTimeout...............5000
+2019-12-30 15:54:15 INFO  HikariDataSource:80 - HikariPool-1 - Starting...
+2019-12-30 15:54:15 DEBUG HikariPool:566 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@7d37f995
+2019-12-30 15:54:15 INFO  HikariDataSource:82 - HikariPool-1 - Start completed.
+2019-12-30 15:54:15 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@54073118
+2019-12-30 15:54:15 DEBUG HikariPool:417 - HikariPool-1 - Pool stats (total=2, active=2, idle=0, waiting=0)
+2019-12-30 15:54:15 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3428ce57
+2019-12-30 15:54:15 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@306616c6
+2019-12-30 15:54:15 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@468df58c
+2019-12-30 15:54:15 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@743d2c7d
+2019-12-30 15:54:15 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@49aaa900
+2019-12-30 15:54:15 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@14f69df
+2019-12-30 15:54:15 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@3ddf9fb9
+2019-12-30 15:54:15 DEBUG HikariPool:730 - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@72ab7009
+2019-12-30 15:54:15 DEBUG HikariPool:417 - HikariPool-1 - After adding stats (total=10, active=2, idle=8, waiting=0)
+2019-12-30 15:54:45 DEBUG HikariPool:417 - HikariPool-1 - Pool stats (total=10, active=2, idle=8, waiting=0)
+2019-12-30 15:55:15 DEBUG HikariPool:417 - HikariPool-1 - Pool stats (total=10, active=2, idle=8, waiting=0)
+2019-12-30 15:55:45 DEBUG HikariPool:417 - HikariPool-1 - Pool stats (total=10, active=2, idle=8, waiting=0)
+2019-12-30 15:56:15 DEBUG HikariPool:417 - HikariPool-1 - Pool stats (total=10, active=2, idle=8, waiting=0)
+2019-12-30 15:56:45 DEBUG HikariPool:417 - HikariPool-1 - Pool stats (total=10, active=2, idle=8, waiting=0)
+2019-12-30 15:57:15 DEBUG HikariPool:417 - HikariPool-1 - Pool stats (total=10, active=2, idle=8, waiting=0)
+2019-12-30 15:57:45 DEBUG HikariPool:417 - HikariPool-1 - Pool stats (total=10, active=2, idle=8, waiting=0)
+2019-12-30 15:58:15 DEBUG HikariPool:417 - HikariPool-1 - Pool stats (total=10, active=2, idle=8, waiting=0)

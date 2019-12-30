@@ -21,7 +21,7 @@ import java.util.List;
 public interface IAdminDao {
     void insertUser(String username,String password);//增加学员1
     boolean usernameExit(String username);//2根据传过来的username，判断在数据库中是否存在，如果存在返回true，否则返回false
-    void getPasswordByUsername(String username);//3、根据用户名获取用户密码
+    String getPasswordByUsername(String username);//3、根据用户名获取用户密码
     void delStudent(String username);//删除考试学员
     void updateStudent(String username,String password,int id);//修改考试学员
     List<Student> selectStudentByName(String username);//通过姓名查询学生信息
