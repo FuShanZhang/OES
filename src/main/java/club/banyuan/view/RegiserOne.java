@@ -6,14 +6,14 @@ import java.awt.event.ActionListener;
 
 import static club.banyuan.controller.CheckRegister.*;
 
-class RegisterOne extends JFrame {
+     class RegisterOne extends JFrame {
 
     /**
      * Creates new form zhuce
      */
     public RegisterOne() {
-        initComponents();
-        setLocationRelativeTo(null);
+            initComponents();
+            setLocationRelativeTo(null);
     }
 
     /**
@@ -37,6 +37,7 @@ class RegisterOne extends JFrame {
         regEmailInput = new JTextField();
         regAddBatton = new JButton();
         regTitle = new JLabel();
+        regAddBatton2 = new JButton();
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
@@ -46,7 +47,7 @@ class RegisterOne extends JFrame {
 
         regPassword.setText("密   码：");
 
-        regPasswordInput.setToolTipText("必须包含大小写字母和数字的组合,不能使用特殊字符,长度在 8-16 之间");
+        regPasswordInput.setToolTipText("必须包含大小写字母和数字的组合,不能使用特殊字符,长度在 8-10 之间");
 
         regName.setText("姓   名：");
 
@@ -61,34 +62,34 @@ class RegisterOne extends JFrame {
         regAddBatton.setText("注册");
         regAddBatton.setToolTipText("");
         regAddBatton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                checkUserName(regUserNameInput.getText());
-                if (checkUserName(regUserNameInput.getText())&&checkPwd(regPasswordInput.getText())&&checkName(regNameInput.getText())&&checkStuNum(regIdInput.getText())&&checkEmail(regEmailInput.getText())) {
-                    JOptionPane.showMessageDialog(new JLabel(),"注册成功！");
-                    System.out.println(checkUserName(regUserName.getText()));
-                    dispose();
-                    Login.loginwin.setVisible(true);
-                }else {
-                    JOptionPane.showMessageDialog(new JLabel(),"输入不合法，不符合规定字段已被重置");
-                    if (!checkUserName(regUserNameInput.getText())) {
-                        regUserNameInput.setText("");
-                    }
-                    if (!checkPwd(regPasswordInput.getText())) {
-                        regPasswordInput.setText("");
-                    }
-                    if (!checkName(regNameInput.getText())) {
-                        regNameInput.setText("");
-                    }
-                    if (!checkStuNum(regIdInput.getText())) {
-                        regIdInput.setText("");
-                    }
-                    if (!checkEmail(regEmailInput.getText())) {
-                        regEmailInput.setText("");
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    checkUserName(regUserNameInput.getText());
+                    if (checkUserName(regUserNameInput.getText())&&checkPwd(regPasswordInput.getText())&&checkName(regNameInput.getText())&&checkStuNum(regIdInput.getText())&&checkEmail(regEmailInput.getText())) {
+                        JOptionPane.showMessageDialog(new JLabel(),"注册成功！");
+                        System.out.println(checkUserName(regUserName.getText()));
+                        dispose();
+                        Login.loginwin.setVisible(true);
+                    }else {
+                        JOptionPane.showMessageDialog(new JLabel(),"输入不合法，不符合规定字段已被重置");
+                        if (!checkUserName(regUserNameInput.getText())) {
+                            regUserNameInput.setText("");
+                        }
+                        if (!checkPwd(regPasswordInput.getText())) {
+                            regPasswordInput.setText("");
+                        }
+                        if (!checkName(regNameInput.getText())) {
+                            regNameInput.setText("");
+                        }
+                        if (!checkStuNum(regIdInput.getText())) {
+                            regIdInput.setText("");
+                        }
+                        if (!checkEmail(regEmailInput.getText())) {
+                            regEmailInput.setText("");
+                        }
                     }
                 }
-            }
-        });
+            });
 
         regTitle.setFont(new java.awt.Font("Lucida Grande", 0, 28)); // NOI18N
         regTitle.setHorizontalAlignment(SwingConstants.CENTER);
@@ -96,6 +97,15 @@ class RegisterOne extends JFrame {
         regTitle.setDebugGraphicsOptions(DebugGraphics.NONE_OPTION);
         regTitle.setHorizontalTextPosition(SwingConstants.CENTER);
 
+        regAddBatton2.setText("返回");
+        regAddBatton2.setToolTipText("");
+        regAddBatton2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                Login.loginwin.setVisible(true);
+            }
+        });
 
         GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -123,18 +133,20 @@ class RegisterOne extends JFrame {
                                                                 .addComponent(regUserName)
                                                                 .addGap(27, 27, 27)
                                                                 .addComponent(regUserNameInput, GroupLayout.PREFERRED_SIZE, 178, GroupLayout.PREFERRED_SIZE))
-                                                        .addGroup(GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                                                .addComponent(regEmail)
-                                                                .addGap(27, 27, 27)
-                                                                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                                                                        .addComponent(regEmailInput, GroupLayout.PREFERRED_SIZE, 178, GroupLayout.PREFERRED_SIZE)
-                                                                        .addGroup(GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                                                .addComponent(regAddBatton, GroupLayout.PREFERRED_SIZE, 101, GroupLayout.PREFERRED_SIZE)
-                                                                                .addGap(68, 68, 68))))))
+                                                        .addGroup(GroupLayout.Alignment.LEADING, layout.createParallelGroup(GroupLayout.Alignment.TRAILING, false)
+                                                                .addGroup(GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                                                        .addGap(29, 29, 29)
+                                                                        .addComponent(regAddBatton, GroupLayout.PREFERRED_SIZE, 89, GroupLayout.PREFERRED_SIZE)
+                                                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                                        .addComponent(regAddBatton2, GroupLayout.PREFERRED_SIZE, 89, GroupLayout.PREFERRED_SIZE))
+                                                                .addGroup(GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                                                        .addComponent(regEmail)
+                                                                        .addGap(27, 27, 27)
+                                                                        .addComponent(regEmailInput, GroupLayout.PREFERRED_SIZE, 178, GroupLayout.PREFERRED_SIZE)))))
                                         .addGroup(layout.createSequentialGroup()
                                                 .addGap(87, 87, 87)
                                                 .addComponent(regTitle, GroupLayout.PREFERRED_SIZE, 202, GroupLayout.PREFERRED_SIZE)))
-                                .addContainerGap(62, Short.MAX_VALUE))
+                                .addContainerGap(71, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
                 layout.createParallelGroup(GroupLayout.Alignment.LEADING)
@@ -161,9 +173,11 @@ class RegisterOne extends JFrame {
                                 .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                                         .addComponent(regEmail)
                                         .addComponent(regEmailInput, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-                                .addGap(30, 30, 30)
-                                .addComponent(regAddBatton, GroupLayout.PREFERRED_SIZE, 45, GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(51, Short.MAX_VALUE))
+                                .addGap(41, 41, 41)
+                                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                                        .addComponent(regAddBatton, GroupLayout.PREFERRED_SIZE, 37, GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(regAddBatton2, GroupLayout.PREFERRED_SIZE, 37, GroupLayout.PREFERRED_SIZE))
+                                .addContainerGap(48, Short.MAX_VALUE))
         );
 
         pack();
@@ -171,7 +185,7 @@ class RegisterOne extends JFrame {
 
     /**
      */
-    public static void start() {
+                 public static void start() {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -195,6 +209,8 @@ class RegisterOne extends JFrame {
         }
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -206,6 +222,7 @@ class RegisterOne extends JFrame {
 
     // Variables declaration - do not modify
     private JButton regAddBatton;
+    private JButton regAddBatton2;
     private JLabel regEmail;
     private JTextField regEmailInput;
     private JLabel regId;

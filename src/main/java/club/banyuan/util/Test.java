@@ -15,6 +15,4 @@ public class Test {
         ClientConn clientConn = new ClientConn(new Socket("192.168.10.59",8469));
     }
 
-
-
 }

@@ -2,7 +2,6 @@ package club.banyuan.pojo;
 
 
 
-import java.util.List;
 
 
 public class Question {
@@ -17,7 +16,8 @@ public class Question {
     public Question() {
     }
 
-    public Question( String name, Integer opt, String subject, String questionText, Integer questionType) {
+    public Question(Integer id, String name, Integer opt, String subject, String questionText, Integer questionType) {
+        this.id = id;
         this.name = name;
         this.opt = opt;
         this.subject = subject;

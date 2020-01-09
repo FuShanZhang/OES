@@ -1,5 +1,7 @@
 package club.banyuan.view;
 
+import club.banyuan.dao.AdminDaoImpl;
+import club.banyuan.dao.IAdminDao;
 import club.banyuan.service.AdminServer;
 import club.banyuan.service.Impl.AdminServerImpl;
 import javax.swing.*;
@@ -12,6 +14,13 @@ public class Login extends JFrame {
 
 
     AdminServer adminServer = new AdminServerImpl();
+    IAdminDao adminDao = new AdminDaoImpl();
+    static String uName;
+    static String uPwd;
+    static String aName;
+    static String aPwd;
+    static String strueName;
+    static String atrueName;
 
     /**
      * Creates new form denglu
@@ -81,24 +90,34 @@ public class Login extends JFrame {
         login.setMaximumSize(new Dimension(100, 30));
         login.setPreferredSize(new Dimension(75, 32));
         login.addActionListener(new ActionListener() {
+
             @Override
             public void actionPerformed(ActionEvent e) {
                 String userNameTemp=(String) userNameInput.getEditor().getItem();
                 userNameInput.addItem(userNameTemp);
                 if (true){
                     if (jRadioButton4.isSelected()) {
-                        String uName = (String)userNameInput.getEditor().getItem();
-                        String uPwd = new String(passwordInput.getPassword());
-
+                         uName = (String)userNameInput.getEditor().getItem();
+                         uPwd = new String(passwordInput.getPassword());
                         if(adminServer.login(uName,uPwd)){
+                            System.out.println(uName);
+                            strueName = adminDao.selectStudentByName(uName).get(0).getName();
                             setVisible(false);
-                            TestReady.start();
+                            StudentUI.stuStart();
                         }else {
                             JOptionPane.showMessageDialog(new javax.swing.JLabel(),"用户名和密码错误");
                         }
                     }
                     if (jRadioButton3.isSelected()){
-
+                        aName = (String)userNameInput.getEditor().getItem();
+                        aPwd = new String(passwordInput.getPassword());
+                        if(adminServer.loginR(aName,aPwd)){
+                            atrueName = adminDao.selectAdminByName(aName).get(0).getName();
+                            setVisible(false);
+                            Manage.ManageStart();
+                        }else {
+                            JOptionPane.showMessageDialog(new javax.swing.JLabel(),"用户名和密码错误");
+                        }
                     }
                 }
 //                setVisible(false);

@@ -5,7 +5,7 @@ import club.banyuan.pojo.Question;
 import java.util.List;
 
 public interface RandomSubject {
-    List<Question> randomSubjectMethod(String subjectName);
+    List<Question> randomSubjectMethod(String subjectName , Integer qType );
 
-    List getTenQuestions(String subjectName);
+    List getTenQuestions(String subjectName,Integer qType ,Integer number);
 }

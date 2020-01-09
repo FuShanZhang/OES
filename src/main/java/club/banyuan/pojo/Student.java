@@ -73,8 +73,7 @@ public class Student {
                 ", name='" + name + '\'' +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
-                ", score=" + score +
-                '}';
+                "}";
     }
 
 }

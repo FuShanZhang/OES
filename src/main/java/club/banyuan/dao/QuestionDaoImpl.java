@@ -18,16 +18,44 @@ public class QuestionDaoImpl implements IQuestionDao {
 
 
     @Override
-    public List<Question> selectSubject(String subjectName)  {
+    public List<Question> selectSubject(String subjectName , Integer qType)  {
         //获取连接
         Connection con = HikariUtil.getConnection();
         //新建集合
         ArrayList<Question> list = new ArrayList<Question>();
         //通过传过来的科目名称选择题目
-        String sql = "select * from question where qsubject=?";
+        String sql = "select * from question where qsubject=? and qtype = ?";
         try {
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, subjectName);
+            ps.setInt(2,qType);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                Question question = new Question();
+                question.setId(rs.getInt(1));
+                question.setName(rs.getString(2));
+                question.setOpt(rs.getInt(3));
+                question.setSubject(rs.getString(4));
+                question.setQuestionText(rs.getString(5));
+                question.setQuestionType(rs.getInt(6));
+                list.add(question);
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+    @Override
+    public List<Question> selectAllQuestion()  {
+        //获取连接
+        Connection con = HikariUtil.getConnection();
+        //新建集合
+        ArrayList<Question> list = new ArrayList<Question>();
+        //通过传过来的科目名称选择题目
+        String sql = "select * from question";
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Question question = new Question();
@@ -46,33 +74,6 @@ public class QuestionDaoImpl implements IQuestionDao {
     }
 
 
-
-
-    //通过科目查询该科目相关的所有试题,单表查询
-    @Override
-    public List<Question> selectAllQuestionBySubject( String subject) {
-        List<Question> list = new ArrayList<Question>();
-        Connection con = HikariUtil.getConnection();
-        String  sql = " select * from question where question.qsubject =? ";
-        try {
-            PreparedStatement stmt = con.prepareStatement(sql);
-            stmt.setString(1,subject);
-            ResultSet re = stmt.executeQuery();
-            while(re.next()){
-                Question question = new Question();
-                question.setId(re.getInt("qid"));
-                question.setName(re.getString("qname"));
-                question.setOpt(re.getInt("qopt"));
-                question.setQuestionText(re.getString("qquestion_text"));
-                question.setSubject(re.getString("qsubject"));
-                question.setQuestionType(re.getInt("qtype"));
-                list.add(question);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return list;
-    }
 
     //增加科目
     public void addSb(int id,String subject){

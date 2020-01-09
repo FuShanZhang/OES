@@ -1,5 +1,6 @@
 package club.banyuan.dao;
 
+import club.banyuan.pojo.Admin;
 import club.banyuan.pojo.Question;
 import club.banyuan.pojo.Student;
 
@@ -19,7 +20,7 @@ import java.util.List;
  * @author zhangyuting
  */
 public interface IAdminDao {
-    void insertUser(String username,String password);//增加学员1
+    void insertUser(String username,String name,String password);//增加学员1
     boolean usernameExit(String username);//2根据传过来的username，判断在数据库中是否存在，如果存在返回true，否则返回false
     String getPasswordByUsername(String username);//3、根据用户名获取用户密码
     void delStudent(String username);//删除考试学员
@@ -29,5 +30,14 @@ public interface IAdminDao {
     void delQuestion(Integer id);//删除考题
     void updateQuestion(Integer id,String opt);//修改考题
     List<Question> selectQuestionByID(Integer id);//根据id查询试题信息
+    public boolean usernameExitR(String username);
+    public String getPasswordByUsernameR(String username);
+    public List<Admin> selectAdminByName(String username);
+    public List<Student> selectStudentByNameAndScore(String username);
 
-}
+
+        List<Student> selectAllStudent();
+
+
+
+    }

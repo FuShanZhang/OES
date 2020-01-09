@@ -1,14 +1,19 @@
 package club.banyuan.view;
 
+import org.junit.Test;
+
 public class TestReady extends javax.swing.JFrame {
 
+    static String subject;
     /**
      * Creates new form TestReady
      */
     public TestReady() {
         initComponents();
         setLocationRelativeTo(null);
+        setResizable(false);
     }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -51,6 +56,9 @@ public class TestReady extends javax.swing.JFrame {
         tRstartTestBotton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tRstartTestBottonActionPerformed(evt);
+                TestSingle.TestSingleStart();
+                setVisible(false);
+                subject = (String) tRChooseLessonInput.getSelectedItem();
             }
         });
 

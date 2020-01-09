@@ -1,12 +1,17 @@
 package club.banyuan.dao;
 
+import club.banyuan.pojo.Admin;
 import club.banyuan.pojo.Question;
 import club.banyuan.pojo.Student;
 import club.banyuan.util.HikariUtil;
+import org.junit.Test;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 /**
  * 对Student表进行增删改查操作
  * @author zhangyuting
@@ -16,13 +21,14 @@ public class AdminDaoImpl implements IAdminDao{
 
     @Override
     //1、在Student表格里面增加学员 insert into student(username,password)values(susername,spassword)
-    public  void insertUser(String username, String password) {
+    public  void insertUser(String username,String name, String password) {
         Connection cnn = HikariUtil.getConnection();//连接到数据库
-        String sql = "insert into student(susername,spassword)values(?,?)";
+        String sql = "insert into student(susername,sname,spassword)values(?,?,?)";
         try {
             PreparedStatement stmt=cnn.prepareStatement(sql);//在执行SQL语句之前，先创建一个statement对象
             stmt.setString(1,username);//此处“1”表示第一个“？”，表示第一个宿主变量username
-            stmt.setString(2,password);//此处“2”表示第二个“？”，表示第二个宿主变量password
+            stmt.setString(2,name);//此处“1”表示第一个“？”，表示第一个宿主变量username
+            stmt.setString(3,password);//此处“2”表示第二个“？”，表示第二个宿主变量password
             stmt.executeUpdate();//返回受SQL语句影响的行数，  除了执行查询select语句时用executeQuery,其他的诸如insert/update/delete/等语句都可以用executeUpdate.另外还有一个execute可以执行任意SQL语句
         } catch (SQLException e) {
             e.printStackTrace();
@@ -36,6 +42,21 @@ public class AdminDaoImpl implements IAdminDao{
     public boolean usernameExit(String username) {
         Connection con = HikariUtil.getConnection();//连接到数据库
         String sql = "select * from student where susername = ?";
+        try {
+            PreparedStatement stmt = con.prepareStatement(sql);
+            stmt.setString(1,username);
+            ResultSet re = stmt.executeQuery();
+            return re.next();//这边如果查询到了该用户则返回ture,如果没有查询到就返回false
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;//这边false的意义在于：如果上面sql语句写错了，则会被catch捕捉到异常，try里面语句不会吧执行，就会返回false
+    }
+
+    @Override
+    public boolean usernameExitR(String username) {
+        Connection con = HikariUtil.getConnection();//连接到数据库
+        String sql = "select * from admin where ausername = ?";
         try {
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.setString(1,username);
@@ -65,11 +86,27 @@ public class AdminDaoImpl implements IAdminDao{
         return null;
     }
 
+    @Override
+    public String getPasswordByUsernameR(String username) {
+        Connection con = HikariUtil.getConnection();
+        String sql = "select apassword from admin where ausername = ?";
+        try {
+            PreparedStatement stmt = con.prepareStatement(sql);
+            stmt.setString(1,username);
+            ResultSet re = stmt.executeQuery();//查询返回一个结果集
+            re.next();
+            return re.getString(1);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     //删除考试学员
     @Override
     public void delStudent(String  username) {
         Connection con = HikariUtil.getConnection();
-        String sql = "delete from student where susername = ?";
+        String sql = "delete from student where sname = ?";
         try {
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.setString(1,username);
@@ -96,12 +133,68 @@ public class AdminDaoImpl implements IAdminDao{
         }
 
     }
+    public void updateStudentByName(String username,String name,String preUserName) {
+        Connection con = HikariUtil.getConnection();
+        String sql = "update student set susername = ? ,sname = ? where susername = ?";//id是主键，不能随意更改，只能更改姓名和密码
+        try {
+            PreparedStatement stmt = con.prepareStatement(sql);
+            stmt.setString(1,username);
+            stmt.setString(2,name);
+            stmt.setString(3, preUserName);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void updateStudentPwdByName(String pwd,String preUserName) {
+        Connection con = HikariUtil.getConnection();
+        String sql = "update student set spassword = ?  where susername = ?";//id是主键，不能随意更改，只能更改姓名和密码
+        try {
+            PreparedStatement stmt = con.prepareStatement(sql);
+            stmt.setString(1,pwd);
+            stmt.setString(2,preUserName);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public List<Student> selectStudentByNameAndScore(String username) {
+        List<Student> list = new ArrayList<Student>();
+        Connection con = HikariUtil.getConnection();
+        String sql = "select * from student s inner join point p on p.sid= s.sid where s.sname = ?";
+        try {
+            PreparedStatement stmt = con.prepareStatement(sql);
+            stmt.setString(1,username);
+            ResultSet re = stmt.executeQuery();
+            //把数据从结果集取出来放入list集合
+            Map<String , Double> map = new HashMap<>();
+            Student student = new Student();
+            while(re.next()){
+                student.setId(re.getInt("sid"));
+                student.setUsername(re.getString("susername"));
+                student.setPassword(re.getString("spassword"));
+                student.setName(re.getString("sname"));
+                map.put(re.getString("psubject"),re.getDouble("pscore"));
+                list.add(student);//将student对象放入集合中
+            }
+            student.setScore(map);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+
+    }
+
     //通过姓名查询学生信息
     @Override
     public List<Student> selectStudentByName(String username) {
         List<Student> list = new ArrayList<Student>();
         Connection con = HikariUtil.getConnection();
-        String sql = "select * from student where susername = ?";
+        String sql = "select * from student s  where s.susername = ?";
         try {
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.setString(1,username);
@@ -109,10 +202,37 @@ public class AdminDaoImpl implements IAdminDao{
             //把数据从结果集取出来放入list集合
             while(re.next()){
                 Student student = new Student();
-                student.setId(re.getInt("id"));
-                student.setUsername(re.getString("username"));
-                student.setPassword(re.getString("password"));
+                student.setId(re.getInt("sid"));
+                student.setUsername(re.getString("susername"));
+                student.setPassword(re.getString("spassword"));
+                student.setName(re.getString("sname"));
                 list.add(student);//将student对象放入集合中
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+
+    }
+
+    public List<Admin> selectAdminByName(String username) {
+        List<Admin> list = new ArrayList<Admin>();
+        Connection con = HikariUtil.getConnection();
+        String sql = "select * from admin where ausername = ?";
+        try {
+            PreparedStatement stmt = con.prepareStatement(sql);
+            stmt.setString(1,username);
+            ResultSet re = stmt.executeQuery();
+            //把数据从结果集取出来放入list集合
+            while(re.next()){
+                Admin admin = new Admin();
+                admin.setId(re.getInt("aid"));
+
+                admin.setUsername(re.getString("ausername"));
+                admin.setPassword(re.getString("apassword"));
+                admin.setName(re.getString("aname"));
+                list.add(admin);//将student对象放入集合中
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -120,6 +240,31 @@ public class AdminDaoImpl implements IAdminDao{
         return list;
 
     }
+
+    @Override
+    public List<Student> selectAllStudent() {
+        List<Student> list = new ArrayList<Student>();
+        Connection con = HikariUtil.getConnection();
+        String sql = "select * from student";
+        try {
+            PreparedStatement stmt = con.prepareStatement(sql);
+            ResultSet re = stmt.executeQuery();
+            //把数据从结果集取出来放入list集合
+            while(re.next()){
+                Student student = new Student();
+                student.setId(re.getInt("sid"));
+                student.setUsername(re.getString("susername"));
+                student.setPassword(re.getString("spassword"));
+                student.setName(re.getString("sname"));
+                list.add(student);//将student对象放入集合中
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+
     //增加考题
     @Override
     public void insertQuestion(Question question) {
@@ -188,4 +333,5 @@ public class AdminDaoImpl implements IAdminDao{
         }
         return null;
     }
+
 }

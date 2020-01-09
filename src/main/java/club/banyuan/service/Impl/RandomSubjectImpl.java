@@ -9,20 +9,20 @@ import java.util.*;
 
 public class RandomSubjectImpl implements RandomSubject {
     @Override
-    public List randomSubjectMethod(String subjectName) {
+    public List randomSubjectMethod(String subjectName,Integer qType) {
 
         IQuestionDao question = new QuestionDaoImpl();
         //传入
-        List list = question.selectSubject(subjectName);
+        List list = question.selectSubject(subjectName, qType);
         //随你打乱集合中的顺序
         Collections.shuffle(list);
         return list;
     }
 
-    public List getTenQuestions(String subjectName) {
-        List list = randomSubjectMethod(subjectName);
+    public List getTenQuestions(String subjectName , Integer qType , Integer number) {
+        List list = randomSubjectMethod(subjectName,qType);
         ArrayList<Question> arrayList = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < number; i++) {
             arrayList.add((Question) list.get(i));
         }
         return arrayList;
